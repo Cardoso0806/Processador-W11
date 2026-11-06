@@ -1,0 +1,14 @@
+ULA
+
+A Ula possui três entradas (A, B e Op) e duas saídas (Result e Zero).
+A saída Result representa o resultado de uma operação lógica aritmetica, enquanto zero a comparação entre dois valores.
+
+    4 Operações
+        - OR: 00
+        - AND: 01
+        - ADD: 10
+        - SUB: 11
+    2 Comparações
+        - Equal: 00
+        - Greater or equal: 01
+        
