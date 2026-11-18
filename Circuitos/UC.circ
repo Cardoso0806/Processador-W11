@@ -120,6 +120,7 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="ULAop"/>
+      <a name="radix" val="16"/>
       <a name="type" val="output"/>
       <a name="width" val="2"/>
     </comp>
@@ -130,6 +131,7 @@
     <comp lib="0" loc="(200,280)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="OPCODE"/>
+      <a name="radix" val="16"/>
       <a name="width" val="3"/>
     </comp>
     <comp lib="0" loc="(220,280)" name="Splitter">
@@ -340,14 +342,17 @@
     <wire from="(1600,220)" to="(1640,220)"/>
     <wire from="(1600,260)" to="(1640,260)"/>
     <wire from="(1670,150)" to="(1700,150)"/>
-    <wire from="(1670,190)" to="(1670,200)"/>
-    <wire from="(1670,200)" to="(1720,200)"/>
-    <wire from="(1670,220)" to="(1670,230)"/>
-    <wire from="(1670,220)" to="(1720,220)"/>
-    <wire from="(1670,270)" to="(1720,270)"/>
+    <wire from="(1670,190)" to="(1680,190)"/>
+    <wire from="(1670,230)" to="(1680,230)"/>
+    <wire from="(1670,270)" to="(1700,270)"/>
+    <wire from="(1680,190)" to="(1680,200)"/>
+    <wire from="(1680,200)" to="(1720,200)"/>
+    <wire from="(1680,220)" to="(1680,230)"/>
+    <wire from="(1680,220)" to="(1720,220)"/>
     <wire from="(1700,150)" to="(1700,190)"/>
     <wire from="(1700,190)" to="(1720,190)"/>
-    <wire from="(1720,230)" to="(1720,270)"/>
+    <wire from="(1700,230)" to="(1700,270)"/>
+    <wire from="(1700,230)" to="(1720,230)"/>
     <wire from="(1780,210)" to="(1830,210)"/>
     <wire from="(200,150)" to="(240,150)"/>
     <wire from="(200,280)" to="(220,280)"/>
@@ -443,24 +448,29 @@
     <appear>
       <rect fill="none" height="20" stroke="#000000" width="20" x="50" y="50"/>
       <circ-anchor facing="east" x="50" y="60"/>
-      <circ-port dir="in" pin="210,160" x="50" y="60"/>
-      <circ-port dir="in" pin="330,180" x="70" y="60"/>
+      <circ-port dir="in" pin="220,160" x="50" y="60"/>
+      <circ-port dir="out" pin="390,150" x="70" y="60"/>
     </appear>
-    <comp lib="0" loc="(210,160)" name="Pin">
+    <comp lib="0" loc="(220,160)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="label" val="Input"/>
     </comp>
-    <comp lib="0" loc="(270,180)" name="Splitter">
-      <a name="facing" val="north"/>
+    <comp lib="0" loc="(330,200)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="west"/>
     </comp>
-    <comp lib="0" loc="(330,180)" name="Pin">
+    <comp lib="0" loc="(390,150)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="Output"/>
+      <a name="type" val="output"/>
       <a name="width" val="2"/>
     </comp>
-    <wire from="(210,160)" to="(250,160)"/>
-    <wire from="(250,160)" to="(260,160)"/>
-    <wire from="(270,180)" to="(330,180)"/>
+    <wire from="(220,160)" to="(310,160)"/>
+    <wire from="(310,160)" to="(310,180)"/>
+    <wire from="(310,180)" to="(310,190)"/>
+    <wire from="(330,200)" to="(350,200)"/>
+    <wire from="(350,150)" to="(350,200)"/>
+    <wire from="(350,150)" to="(390,150)"/>
   </circuit>
 </project>
