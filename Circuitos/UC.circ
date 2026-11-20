@@ -142,7 +142,7 @@
     <comp lib="0" loc="(300,150)" name="Tunnel">
       <a name="label" val="FunctTrue"/>
     </comp>
-    <comp lib="0" loc="(330,170)" name="Tunnel">
+    <comp lib="0" loc="(300,200)" name="Tunnel">
       <a name="label" val="FunctFalse"/>
     </comp>
     <comp lib="0" loc="(390,750)" name="Pin">
@@ -245,7 +245,7 @@
       <a name="inputs" val="4"/>
       <a name="width" val="2"/>
     </comp>
-    <comp lib="1" loc="(280,170)" name="NOT Gate">
+    <comp lib="1" loc="(280,200)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
     <comp lib="1" loc="(320,320)" name="AND Gate">
@@ -370,9 +370,9 @@
     <wire from="(230,510)" to="(230,550)"/>
     <wire from="(230,510)" to="(290,510)"/>
     <wire from="(230,550)" to="(290,550)"/>
-    <wire from="(240,150)" to="(240,170)"/>
+    <wire from="(240,150)" to="(240,200)"/>
     <wire from="(240,150)" to="(300,150)"/>
-    <wire from="(240,170)" to="(260,170)"/>
+    <wire from="(240,200)" to="(260,200)"/>
     <wire from="(240,300)" to="(240,320)"/>
     <wire from="(240,320)" to="(240,360)"/>
     <wire from="(240,320)" to="(280,320)"/>
@@ -401,7 +401,7 @@
     <wire from="(250,530)" to="(250,570)"/>
     <wire from="(250,530)" to="(290,530)"/>
     <wire from="(250,570)" to="(280,570)"/>
-    <wire from="(280,170)" to="(330,170)"/>
+    <wire from="(280,200)" to="(300,200)"/>
     <wire from="(320,320)" to="(370,320)"/>
     <wire from="(320,360)" to="(460,360)"/>
     <wire from="(320,400)" to="(470,400)"/>
